@@ -110,7 +110,6 @@ public class StoreManager : MonoBehaviour
             playerClient.money -= price;
             moneyText.SetText("Money: " + playerClient.money.ToString("000"));
             print("You have enough money");
-            //UnitManager.instance.OnCreation();
             CreateUnit();
         }
         else if (price > playerClient.money)
